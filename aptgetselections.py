@@ -72,7 +72,10 @@ if __name__ == '__main__':
                                 action='store_true', help='Maker Event is on.')
     args = argParser.parse_args()
     uname = os.uname()
+<<<<<<< HEAD:aptgetselections.py
     print('system on %s'%uname[0])
+=======
+>>>>>>> master:apt-get-selections.py
     if isinstance(os.uname, posix.uname_result) and uname[0] == 'Linux':
         ins = AptgetSelection(args)
         ins.do()
