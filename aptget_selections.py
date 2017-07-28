@@ -73,7 +73,7 @@ if __name__ == '__main__':
     args = argParser.parse_args()
     uname = os.uname()
     print('system on %s'%uname[0])
-    if isinstance(os.uname, posix.uname_result) and uname[0] == 'Linux':
+    if uname[0] == 'Linux':
         ins = AptgetSelection(args)
         ins.do()
         ins.finalize()
